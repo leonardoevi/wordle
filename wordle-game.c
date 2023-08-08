@@ -77,7 +77,6 @@ int main(){
     while(Round < NR_OF_GUESSES && !WIN){
         printf(CLEAR);
         print_table();
-        printf("\n");
         printkeys();
         get_guess();
         updatekeyboard();
@@ -90,7 +89,6 @@ int main(){
 
     printf(CLEAR);
     print_table();
-    printf("\n");
 
     if(WIN)
         printf("You found the correct word %d guesses!\n\n", Round);
@@ -183,6 +181,7 @@ void print_table(){
     int i;
     for(i=0; i < NR_OF_GUESSES; i++)
         print_guess(&Table[i]);
+    printf("\n");
     return;
 }
 
