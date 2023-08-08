@@ -30,7 +30,8 @@
 #define ROW2LEN 9
 #define ROE3LEN 7
 
-//every guessed word has a 'check' string that tells wich letters are CORECT, MISPLACED or WRONG
+//every guessed word has a 'check' string that tells wh
+ich letters are CORECT, MISPLACED or WRONG
 typedef struct guess_str{
     char word[WORD_LEN + 1];
     char* check;
@@ -99,7 +100,7 @@ int main(){
 }
 
 //compares guessed word to reference word
-//returns a string that tells wich letters of the guessed word are CORRECT (g), wich are MISPLACED (y) and wich are WRONG (b)
+//returns a string that tells which letters of the guessed word are CORRECT (g), which are MISPLACED (y) and which are WRONG (b)
 //for example if the reference word is HEART and the guessed word is SLATE
 //                HEART
 //                SLATE
