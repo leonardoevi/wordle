@@ -30,8 +30,7 @@
 #define ROW2LEN 9
 #define ROE3LEN 7
 
-//every guessed word has a 'check' string that tells wh
-ich letters are CORECT, MISPLACED or WRONG
+//every guessed word has a 'check' string that tells wich letters are CORRECT, MISPLACED or WRONG
 typedef struct guess_str{
     char word[WORD_LEN + 1];
     char* check;
@@ -62,6 +61,7 @@ char secret_word[WORD_LEN + 1] = "HOUSE\0";
 
 int Round = 0;
 int nr_answers = 0;
+int error = 0;
 
 keyboard_str keyboard = {
     {"qwertyuiopasdfghjklzxcvbnm\0"}, //keys
@@ -73,9 +73,11 @@ int main(){
     table_init();
     choose_answer();
 
+    if(error) return 0;
+
     printf("%s\n", secret_word);
 
-    while(Round < NR_OF_GUESSES && !WIN){
+    while(Round < NR_OF_GUESSES && !WIN && !error){
         printf(CLEAR);
         print_table();
         printkeys();
@@ -88,11 +90,13 @@ int main(){
         Round++;
     }
 
+    if(error) return 0;
+
     printf(CLEAR);
     print_table();
 
     if(WIN)
-        printf("You found the correct word %d guesses!\n\n", Round);
+        printf("You found the correct word in %d guesses!\n\n", Round);
     else
         printf("You lost, the correct word is: %s\n\n", secret_word);
 
@@ -100,7 +104,7 @@ int main(){
 }
 
 //compares guessed word to reference word
-//returns a string that tells which letters of the guessed word are CORRECT (g), which are MISPLACED (y) and which are WRONG (b)
+//returns a string that tells wich letters of the guessed word are CORRECT (g), wich are MISPLACED (y) and wich are WRONG (b)
 //for example if the reference word is HEART and the guessed word is SLATE
 //                HEART
 //                SLATE
@@ -200,10 +204,11 @@ void get_guess(){
                 i--;
         }
         fflush(stdin);
-        printf("\n");
+//        printf("\n");
         word[WORD_LEN] = '\0';
 
         valid = is_valid_entry(word);   
+        if(error) return;
     }while(valid == 0);
 
     for(i=0; i< WORD_LEN; i++)
@@ -234,6 +239,12 @@ int is_valid_entry(char* word){
 
     //check if it's contained in allowed guesses
     FILE* allowed = fopen(ALLOWED_GUESSES, "r");
+    if(allowed == NULL){
+        printf("--- UNABLE TO OPEN %s FILE ---\n", POSSIBLE_ANSWERS);
+        error = 1;
+        return 0;
+    }
+
     char tmp[WORD_LEN + 1];
     while (!feof(allowed)){
         fscanf(allowed, "%s", tmp);
@@ -254,9 +265,9 @@ void choose_answer(){
     char tmp[WORD_LEN + 1];
 
     FILE* possible = fopen(POSSIBLE_ANSWERS, "r");
-
     if(possible == NULL){
         printf("--- UNABLE TO OPEN %s FILE ---\n", POSSIBLE_ANSWERS);
+        error = 1;
         return;
     }
 
