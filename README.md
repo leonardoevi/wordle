@@ -10,9 +10,10 @@ You can decide which file the possible secret words are picked from, and what ar
 
 Here is an example of how the game works:
 
-<img width="1512" alt="Screenshot 2023-10-12 alle 19 48 28" src="https://github.com/leonardoevi/wordle/assets/141726636/e15c922f-7813-4d60-a920-ca64a76613fa">
-<img width="1512" alt="Screenshot 2023-10-12 alle 19 48 35" src="https://github.com/leonardoevi/wordle/assets/141726636/ca0dd520-99fb-41c6-933d-317be14253b6">
-<img width="1512" alt="Screenshot 2023-10-12 alle 19 48 41" src="https://github.com/leonardoevi/wordle/assets/141726636/e2cc0c7f-425f-4f13-a0c9-8fedb118d2c2">
-<img width="1512" alt="Screenshot 2023-10-12 alle 19 49 04" src="https://github.com/leonardoevi/wordle/assets/141726636/110ad93b-1db5-4558-932f-5f56d1f9c0c5">
-<img width="1512" alt="Screenshot 2023-10-12 alle 19 49 10" src="https://github.com/leonardoevi/wordle/assets/141726636/edcfd59c-4def-46fd-b1e9-df50d2ba39d2">
-<img width="1512" alt="Screenshot 2023-10-12 alle 19 49 22" src="https://github.com/leonardoevi/wordle/assets/141726636/3c16fdae-723f-46b0-b68e-789fa1533a93">
+<img width="800" alt="Screenshot 2023-10-12 alle 19 48 28" src="https://github.com/leonardoevi/wordle/assets/141726636/acc5547e-2e68-4433-9edf-20e9e3a67095">
+<img width="795" alt="Screenshot 2023-10-12 alle 19 48 35" src="https://github.com/leonardoevi/wordle/assets/141726636/053d4d1c-995f-48b0-bfce-2a86bf3785b0">
+<img width="805" alt="Screenshot 2023-10-12 alle 19 48 41" src="https://github.com/leonardoevi/wordle/assets/141726636/bfe693ff-cb30-4017-946a-16800eaaa7ad">
+<img width="805" alt="Screenshot 2023-10-12 alle 19 49 04" src="https://github.com/leonardoevi/wordle/assets/141726636/1c5f0bb5-216d-440c-a8ad-ef40ae328bf5">
+<img width="792" alt="Screenshot 2023-10-12 alle 19 49 10" src="https://github.com/leonardoevi/wordle/assets/141726636/c90b12cf-b14e-430c-bc25-606e7d853b0f">
+<img width="928" alt="Screenshot 2023-10-12 alle 19 49 22" src="https://github.com/leonardoevi/wordle/assets/141726636/3c2ef9a3-e74d-4c4f-b1c9-d48e0245fc11">
+
