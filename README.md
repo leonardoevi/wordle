@@ -14,3 +14,4 @@ Here is an example of how the game works:
 <img width="1512" alt="Screenshot 2023-10-12 alle 19 48 41" src="https://github.com/leonardoevi/wordle/assets/141726636/894bbf65-56e3-4c9c-8214-6b9540e1f223">
 <img width="1512" alt="Screenshot 2023-10-12 alle 19 49 04" src="https://github.com/leonardoevi/wordle/assets/141726636/acb3382d-3625-42af-84c0-f6bc0ab22118">
 <img width="1512" alt="Screenshot 2023-10-12 alle 19 49 10" src="https://github.com/leonardoevi/wordle/assets/141726636/072403ce-33f8-496b-9719-0812567f2a12">
+<img width="1512" alt="Screenshot 2023-10-12 alle 19 48 28" src="https://github.com/leonardoevi/wordle/assets/141726636/dda3a89e-8486-45f3-9fc0-11e75ccd7362">
